@@ -1,0 +1,652 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.45);
+  --secondary-color: rgba(248, 183, 62, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --modal-duration: 1s;
+  --modal-color: #428bca;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+.main-container {
+  min-height: 100%;
+
+}
+
+.content {
+  overflow: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  padding: 0 5.5rem;
+  position: relative;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  padding: 0 80px;
+  /*background: rgba(38, 51, 24, .600);*/
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+/*logo size*/
+header .logo {
+  max-width: 135px;
+  float: left;
+  margin-top: 1.0rem;
+  margin-left: -2%;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+/*spacing of menu*/
+header nav ul li a {
+  text-decoration: none;
+  line-height: 100px;
+  padding: 0 10px;
+  color: #ffffff;
+  display: block;
+  font-weight: bold;
+
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.menu-toggle {
+  color: white;
+  float: right;
+  line-height: 100px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/*header-content - title card*/
+.header-content {
+  color: black;
+  background: url('../img/p1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+/* .header-content1 h1 {
+  position: absolute;
+  font-family: 'Arial Black';
+  top: -36%;
+  color:white;
+  font-size: 2.9em;
+  text-transform: uppercase;
+  padding-left: 4%;
+} */
+
+.header-content h2 {
+  position: absolute;
+  font-family: 'Arial Black';
+  /*,'Roboto Mono', cursive;*/
+  top: 10%;
+  transform: translate(calc(20vw - 18%), -25%);
+  color: white;
+  font-size: 2.9em;
+  transform: translate(calc(20vw - 18%), -25%);
+  text-transform: uppercase;
+}
+
+.header-content h2:nth-child(1) {
+  color: transparent;
+  /* -webkit-text-stroke: 1px rgb(135, 206, 235, 0.35); */
+  -webkit-text-stroke: 2.3px white;
+}
+
+.header-content h2:nth-child(2) {
+  color: #0855b1;
+  animation: water 6s ease-in-out infinite;
+}
+
+@keyframes water {
+
+  0%,
+  100% {
+    clip-path: polygon(0 47%, 8% 36%, 19% 27%, 31% 29%, 42% 45%, 48% 66%, 58% 79%, 76% 79%, 89% 75%, 100% 63%, 100% 100%, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 64%, 8% 76%, 19% 80%, 31% 78%, 42% 68%, 48% 46%, 58% 30%, 76% 28%, 89% 37%, 100% 48%, 100% 100%, 0 100%);
+  }
+}
+
+.header-content h3 {
+  padding-top: 27%;
+  font-family: 'Montserrat';
+  color: black;
+  font-size: 1.5em;
+  padding-left: 5%;
+}
+
+/*About Section*/
+.text-center {
+  text-align: center;
+  line-height: 2;
+  color: #545454;
+  /* margin-top: 1rem; */
+}
+
+.bottom-line {
+  border: 2px double #84cdee;
+  margin-left: auto;
+  margin-right: auto;
+  width: 11%;
+
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: 'Arial Black';
+}
+
+.body-content {
+  margin-top: 1rem;
+}
+
+.text-color {
+  color: #0855b1;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #6d6d6b;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.job {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #dcf0fa;
+  border-bottom: #0855b1 3px solid;
+}
+
+/*Features*/
+/* .nav_features {
+  list-style: none;
+}
+
+.nav_features li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: var(--primary-color);
+  border-bottom: var(--overlay-color) 3px solid;
+} */
+
+.bolded {
+  font-weight: 700;
+}
+
+.map-first {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* 
+
+
+.features-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fas {
+  color: var(--secondary-color);
+} */
+
+
+
+/*Section: Contact*/
+.social-menu {
+  list-style: none;
+  margin: 2rem;
+}
+
+.social-menu li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.social-menu ul li a:hover {
+  color: var(--secondary-color)
+}
+
+/*Padding Content Section*/
+#header-TALA,
+#features,
+#pricing,
+#contact {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+/*Main: Footer*/
+#main-footer {
+  position: relative;
+  clear: both;
+  background: var(--overlay-color);
+  text-align: center;
+  bottom: 0;
+  padding: 5px;
+  color: white;
+}
+
+/* <!--Section: PRICING--> */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 15px;
+}
+
+.price .columns {
+  display: flex;
+}
+
+.municipalities {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+/**====================================*/
+.pricingdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.pricingdiv ul.theplan {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 380px;
+  /* width of each table */
+  margin-right: 20px;
+  /* spacing between tables */
+  margin-bottom: 1em;
+  border: 1px solid #eee;
+  transition: all .5s;
+}
+
+.pricingdiv .grey {
+  background-color: #eee;
+  font-size: 13px;
+  height: 100;
+}
+
+.pricingdiv ul.theplan:hover {
+  transform: scale(1.05);
+  transition: all .5s;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+}
+
+.pricingdiv ul.theplan .center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricingdiv ul.theplan img {
+  max-width: 80%;
+  height: auto;
+}
+
+.pricingdiv ul.theplan li {
+  padding: 10px 10px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.pricingdiv ul.theplan li.title {
+  text-align: center;
+  background: black;
+  color: white;
+  box-shadow: 0 -10px 5px rgba(0, 0, 0, .1) inset;
+}
+
+.pricingdiv ul.theplan:nth-of-type(2) li.title {
+  background: black;
+  color: white;
+}
+
+.pricingdiv ul.theplan:nth-of-type(3) li.title {
+  background: black;
+  color: white;
+}
+
+/*very last LI within each pricing UL */
+.pricingdiv ul.theplan li:last-of-type {
+  justify-content: center;
+  margin-block: auto;
+  /*align last LI (price button li) to the very bottom of UL */
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricingdiv ul.theplan {
+    border-radius: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .pricingdiv ul.theplan:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .pricingdiv a.pricebutton {
+    display: block;
+  }
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* [Object] Modal
+ * =============================== */
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .4);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 70%;
+  margin: auto;
+  overflow: auto;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.60);
+  border-radius: 5px;
+  padding: 1em 2em;
+  
+}
+
+.modal__inner h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0855b1;
+  text-align: center;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #4f9bd9;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Other
+ * =============================== */
+.btn {
+  display: block;
+  font-style: bold;
+  font-style: oswald;
+  margin-top: 10px;
+  width: 9%;
+  height: 9;
+  background: #0855b1;
+  /* background: linear-gradient(145deg, #0855b1, rgba(37, 197, 223, 0.9)); */
+  color: white;
+  padding: 8.5px;
+  text-transform: uppercase;
+  border: 1px solid #888;
+}
+
+
+.btn:hover,
+.btn:focus {
+  background: #0855b1;
+  background: linear-gradient(145deg, #0855b1, rgba(37, 197, 223, 0.9));
+}
+
+.btn:active {
+  background: #0855b1;
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+.button2{
+margin-left: 85px;
+}
+
+.btn--blue {
+  background: #0855b1;
+  /* background: linear-gradient(145deg, #0855b1, rgba(37, 197, 223, 0.9)); */
+}
+
+.btn--blue:hover,
+.btn--blue:focus {
+  background: #0855b1;
+  background: linear-gradient(145deg, #0855b1, rgba(37, 197, 223, 0.9));
+}
+
+.btn--blue:active {
+  background: #0855b1;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  margin-top: -20px;
+  text-align: center;
+
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 12px;
+  color: beige;
+}
+
+.column h3 {
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: uppercase;
+color: beige;
+text-align: center;
+}

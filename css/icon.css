@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.login-page .form .login {
+  margin-top: -1px;
+  margin-bottom: 26px;
+}
+
+.login-header {
+  color: #ffffff;
+}
+
+.form33 {
+  
+  right: 55px;
+  top: 250px;
+  position: absolute;
+  background: #FFFFFF;
+  background: url('../img/ph-03.png');
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  padding: 155px;
+}
+
+
+body {
+  /* background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b); */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login_form button:hover {
+  background: #151c6a;
+}
+
+/* Middle row of the main grid (contains the error message) */
+#login-error-msg-holder {
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Error message. */
+#login-error-msg {
+  width: 83%;
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Style the login form fields' placeholders */
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+/* Style the login form fields (username and password) */
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
